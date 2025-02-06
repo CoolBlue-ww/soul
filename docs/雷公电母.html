@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>雷</title>
+    </head>
+    <body>
+        <audio id="myAudio" controls>
+            <source src="./obj_wo3DlMOGwrbDjj7DisKw_57201437077_8d44_9076_22b2_bd2199bef6e3f31f57dd4232e4ec6539.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Pause</button>
+        <button onclick="stopAudio()">Stop</button>
+        <script>
+            var audio = document.getElementById('myAudio');
+            function playAudio() {
+                audio.play();
+            }
+            function pauseAudio() {
+                audio.pause();
+            }
+            function stopAudio() {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        </script>
+    </body>
+</html>
